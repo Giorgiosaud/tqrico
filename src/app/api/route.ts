@@ -1,6 +1,13 @@
-export async function GET(request: Request) {}
+import { NextResponse } from 'next/server'
+
+export async function GET(request: Request) {
+  return NextResponse.json({
+    request,
+    pepe:'vilsla'
+  })
+}
  
-export async function HEAD(request: Request) {}
+// export async function HEAD(request: Request) {}
  
 export async function POST(request: Request) {}
  
